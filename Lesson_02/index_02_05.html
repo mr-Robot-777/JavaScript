@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        let a=4, b=9;
+
+        function addition(a, b) {
+            return a + b;
+        }
+        function subtraction(a, b) {
+            return a - b;
+        }
+        function division(a, b) {
+            return a / b;
+        }
+        function multiplication(a, b) {
+            return a * b;
+        }
+        function mathOperation(a, b, operation) {
+            switch (operation) {
+                case "+":
+                    return addition(a, b);
+                case "-":
+                    return subtraction(a, b);
+                case "/":
+                    return division(a, b);
+                case "*":
+                    return multiplication(a, b);
+            }
+        }
+
+        console.log('Математический знак "+", результат : ' + mathOperation(a, b, "+"));
+        console.log('Математический знак "-", результат : ' + mathOperation(a, b, "-"));
+        console.log('Математический знак "/", результат : ' + mathOperation(a, b, "/"));
+        console.log('Математический знак "*", результат : ' + mathOperation(a, b, "*"));
+
+    </script>
+</body>
+</html>
