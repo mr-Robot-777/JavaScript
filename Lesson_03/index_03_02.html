@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        // Будут 3 выражения для проверки числового ряда (проверка на ноль, четные и не четные)
+        for (let a = 0; a <= 10; a++) {
+            if (a == 0) {
+                console.log(a + " ноль"); // проверка на ноль,
+                // он не является ни четным ни нечетным поэтому мы должны его пометить отдельно
+            } else if (a % 2 == 0) {
+                console.log(a + " четное число"); 
+                // при остатке от деления у четных должен оставаться 0
+            } else {
+                console.log(a + " не четное число"); 
+                // во всех остальных случаях получаются нечетные
+            }
+        }
+    </script>
+</body>
+</html>
+
