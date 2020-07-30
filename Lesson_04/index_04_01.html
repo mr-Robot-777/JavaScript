@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function NumberToObоect(num) {
+            if (Number.isInteger(num) && 0 < num && num < 999) {
+                return {
+                hundereds: Math.floor(num / 100), // сотни
+                tens: Math.floor(num / 10) % 10, // десятки
+                units: num % 10, // единицы};
+                };
+            }
+            else if (num < 0) {
+                console.log ('вы ввели значение меньше нуля.');
+                return {};
+            }
+            else if (num > 999) {
+                console.log ('вы ввели значение больше 999.');
+                return {};
+            }
+            console.log ('Вы ввели не целочисленное значение в диапозоне [0 .. 999].');
+                return {};
+        };
+        
+        let num = Number(prompt ('Введите число от 0 .. 999 : '));
+        console.log(NumberToObоect(num));
+
+    </script>
+</body>
+</html>
